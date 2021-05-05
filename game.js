@@ -9,7 +9,8 @@ var game = function() {
             })
             .controls()
             .enableSound()
-            .touch();
+            .touch()
+
     
     
         Q.component("dancer",{
@@ -363,7 +364,7 @@ var game = function() {
                 });
 
 
-               button.on("touch" ,function(){
+               Q.input.on("fire" ,function(){
                    Q.clearStages();
                    Q.stageScene("level1", 1);
                    Q.stageScene("hud", 2);
