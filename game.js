@@ -365,9 +365,11 @@ var game = function() {
 
 
                Q.input.on("fire" ,function(){
+                   Q.audio.stop();
                    Q.clearStages();
                    Q.stageScene("level1", 1);
                    Q.stageScene("hud", 2);
+
                });
 
 
