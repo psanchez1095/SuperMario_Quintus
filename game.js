@@ -353,12 +353,14 @@ var game = function() {
               });
 
               stage.insert(button);
+
               button.on("click", function(){
                 Q.clearStages();
                 Q.stageScene("level1", 1);
                 Q.stageScene("hud", 2);
                 });
-               button.on("touch", function(){
+
+               button.on("touchstart" ,function(){
                    Q.clearStages();
                    Q.stageScene("level1", 1);
                    Q.stageScene("hud", 2);
