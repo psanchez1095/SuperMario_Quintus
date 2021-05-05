@@ -360,7 +360,7 @@ var game = function() {
                 Q.stageScene("hud", 2);
                 });
 
-               button.on("touchstart" ,function(){
+               button.on("fire" ,function(){
                    Q.clearStages();
                    Q.stageScene("level1", 1);
                    Q.stageScene("hud", 2);
