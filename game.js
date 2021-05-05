@@ -364,7 +364,7 @@ var game = function() {
                 });
 
 
-               Q.input.on("fire" ,function(){
+               Q.input.on("esc" ,function(){
                    Q.audio.stop();
                    Q.clearStages();
                    Q.stageScene("level1", 1);
