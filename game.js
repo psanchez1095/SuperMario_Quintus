@@ -357,7 +357,15 @@ var game = function() {
                 Q.clearStages();
                 Q.stageScene("level1", 1);
                 Q.stageScene("hud", 2);
-              });
+                });
+               button.on("touch", function(){
+                   Q.clearStages();
+                   Q.stageScene("level1", 1);
+                   Q.stageScene("hud", 2);
+               });
+
+
+
 
            })
 
