@@ -1,0 +1,7 @@
+body{
+    background: burlywood;
+}
+canvas{
+    border: 12px solid black;
+    border-radius: 2%;
+}
