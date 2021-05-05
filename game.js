@@ -7,7 +7,9 @@ var game = function() {
                 height: 500,
                 scaleToFit: true
             })
-            .controls().enableSound().touch();
+            .controls()
+            .enableSound()
+            .touch();
     
     
         Q.component("dancer",{
@@ -360,7 +362,8 @@ var game = function() {
                 Q.stageScene("hud", 2);
                 });
 
-               button.on("fire" ,function(){
+
+               button.on("touch" ,function(){
                    Q.clearStages();
                    Q.stageScene("level1", 1);
                    Q.stageScene("hud", 2);
